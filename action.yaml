@@ -1,5 +1,5 @@
-name: 'GitHub Action for AppCenter Distribute'
-author: 'Akinn Rosa'
+name: 'GitHub Action for AppCenter Distribute Mobile'
+author: 'Familio'
 description: 'Wraps the appcenter CLI to enable common commands.'
 branding:
   icon: 'package'
