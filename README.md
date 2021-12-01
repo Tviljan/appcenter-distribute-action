@@ -31,8 +31,8 @@ jobs:
         uses: actions/checkout@master
       - name: Install Dependencies
         run: npm install
-      - name: Send to AppCenter UI testing
-        uses: familiohq/appcenter-distribute-action@master
+      - name: GitHub Action for AppCenter Mobile UI testing
+        uses: Tviljan/appcenter-uitest-action@0.3
         with:
           args: run uitest --app yourName/sample-app --devices "group/devices" --app-path "path-to-apk" --test-series "nameoftestseries" --locale "en_US" --build-dir "path-to-test-project-folder"
         env:
