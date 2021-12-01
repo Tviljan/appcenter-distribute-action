@@ -1,6 +1,6 @@
-# GitHub Actions for Firebase
+# GitHub Actions for AppCenter UI testing
 
-This Action for [appcenter distribute](https://github.com/microsoft/appcenter-cli) enables arbitrary actions with the `appcenter` command-line client.
+This Action for [appcenter test](https://github.com/microsoft/appcenter-cli) enables arbitrary actions with the `appcenter` command-line client.
 
 ## Inputs
 
@@ -31,10 +31,10 @@ jobs:
         uses: actions/checkout@master
       - name: Install Dependencies
         run: npm install
-      - name: Distribute to AppCenter
+      - name: Send to AppCenter UI testing
         uses: familiohq/appcenter-distribute-action@master
         with:
-          args: stores publish  --file /path/to/file.aab --store Production --app yourName/sample-app --release-notes "Some note."
+          args: run uitest --app yourName/sample-app --devices "group/devices" --app-path "path-to-apk" --test-series "nameoftestseries" --locale "en_US" --build-dir "path-to-test-project-folder"
         env:
           APPCENTER_ACCESS_TOKEN: ${{ secrets.APPCENTER_ACCESS_TOKEN }}
 ```
