@@ -1,6 +1,6 @@
-name: 'GitHub Action for AppCenter Distribute Mobile'
-author: 'Familio'
-description: 'Wraps the appcenter CLI to enable common commands.'
+name: 'GitHub Action for AppCenter Mobile UI testing'
+author: 'Tuomo Viljanmaa'
+description: 'Wraps the appcenter CLI to enable test commands.'
 branding:
   icon: 'package'
   color: 'gray-dark'
