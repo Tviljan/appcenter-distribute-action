@@ -46,4 +46,6 @@ The Dockerfile and associated scripts and documentation in this project are rele
 
 
 ### Credits
-Thanks to [Jeremy Shore](https://github.com/w9jds) for the firebase-action repo.
+Thanks to 
+* [Jeremy Shore](https://github.com/w9jds) for the firebase-action repo.
+* [FamilioHq](https://github.com/familiohq)
